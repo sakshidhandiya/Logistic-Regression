@@ -15,31 +15,48 @@ The project is implemented in Python using Google Colab, and includes all stages
 ## 🛠️ Methodology
 1. Data cleaning & preprocessing  
 2. Exploratory Data Analysis (EDA): Visualized class distribution of the target variable.
+
 Computed correlations between features and the target.
+
 Gained insights into which factors may influence manufacturing outcomes.  
-3. Logistic Regression modeling: Defined features (X) and target (y).
+4. Logistic Regression modeling: 
+Defined features (X) and target (y).
+
 Performed train-test split (70% training, 30% testing).
+
 Built a Logistic Regression model using Scikit-learn.  
-4. Model evaluation: 
+5. Model evaluation: 
 Confusion Matrix
+
 Classification Report (Precision, Recall, F1-score)
+
 ROC-AUC Score
+
 Analyzed model coefficients to interpret feature importance.  
 
 ## ✅ Results
 - Accuracy: **100% (on test set, small sample)**  
 - AUC: **1.0**  
 - Feature Importance (Coefficients):
+
 Capital Investment → Positive influence (+0.361)
+
 Number of Employees → Slight positive influence (+0.083)
+
 Cash Compensation → Slight negative influence (-0.025)
+
 Sales → Negative influence (-0.628)
 
 ## ⚙️ Tools & Libraries
 - Python (Google Colab)  
 - Libraries:
+
 pandas – data manipulation
+
 numpy – numerical computations
+
 matplotlib, seaborn – data visualization
+
 scikit-learn – model building & evaluation
+
 statsmodels – statistical analysis
