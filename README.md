@@ -1,31 +1,45 @@
 # Logistic-Regression
 Logistic Regression Model for Small-Scale Manufacturing Analysis
 # Supervised Learning on Manufacturing Data
+This project demonstrates the application of Logistic Regression, a supervised machine learning technique, on a small manufacturing dataset.
+The goal is to classify manufacturing outcomes (Yes/No) based on financial and operational indicators.
 
-This project applies **Logistic Regression** on a small manufacturing dataset to classify manufacturing outcomes based on financial and operational features.
+The project is implemented in Python using Google Colab, and includes all stages of a typical data science workflow — from data preparation and visualization to model building and evaluation.
 
 ## 📊 Dataset
-- Features: Cash Compensation, Sales, Number of Employees, Capital Investment  
-- Target: Manufacturing (0 = No, 1 = Yes)  
+- Features(Independent Variables): Cash Compensation, Sales, Number of Employees, Capital Investment  
+- Target (Dependent Variable): Manufacturing (0 = No, 1 = Yes)  
 - Size: 22 records (balanced classes)
+- Missing Values: None detected in the dataset.
 
 ## 🛠️ Methodology
 1. Data cleaning & preprocessing  
-2. Exploratory Data Analysis (EDA)  
-3. Logistic Regression modeling  
-4. Model evaluation with accuracy, confusion matrix, and AUC score  
+2. Exploratory Data Analysis (EDA): Visualized class distribution of the target variable.
+Computed correlations between features and the target.
+Gained insights into which factors may influence manufacturing outcomes.  
+3. Logistic Regression modeling: Defined features (X) and target (y).
+Performed train-test split (70% training, 30% testing).
+Built a Logistic Regression model using Scikit-learn.  
+4. Model evaluation: 
+Confusion Matrix
+Classification Report (Precision, Recall, F1-score)
+ROC-AUC Score
+Analyzed model coefficients to interpret feature importance.  
 
 ## ✅ Results
 - Accuracy: **100% (on test set, small sample)**  
 - AUC: **1.0**  
-- Feature importance:  
-  - Capital Investment (+)  
-  - No. of Employees (+)  
-  - Sales (-)  
-  - Cash Compensation (-)
+- Feature Importance (Coefficients):
+Capital Investment → Positive influence (+0.361)
+Number of Employees → Slight positive influence (+0.083)
+Cash Compensation → Slight negative influence (-0.025)
+Sales → Negative influence (-0.628)
 
 ## ⚙️ Tools & Libraries
 - Python (Google Colab)  
-- Pandas, NumPy, Matplotlib, Seaborn  
-- Scikit-learn, Statsmodels  
-
+- Libraries:
+pandas – data manipulation
+numpy – numerical computations
+matplotlib, seaborn – data visualization
+scikit-learn – model building & evaluation
+statsmodels – statistical analysis
